@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   const links = [
-    { name: "دلتا", url: "#" },
+    { name: "دلتا", url: "https://www.mediafire.com/file/ch3r9wwnn8io32g/FON.Delta.FON-v2.703.apk/file" },
     { name: "دلتا فتنام", url: "https://www.mediafire.com/file/b8vms6du69x09kw/Delta_VNG_v2.702.%5BFON%5D.apk/file" },
     { name: "سكيبكس", url: "#" },
     { name: "ارسيوس", url: "#" },
