@@ -6,7 +6,7 @@ export default function Home() {
     { name: "دلتا", url: "https://www.mediafire.com/file/ch3r9wwnn8io32g/FON.Delta.FON-v2.703.apk/file" },
     { name: "دلتا فتنام", url: "https://www.mediafire.com/file/b8vms6du69x09kw/Delta_VNG_v2.702.%5BFON%5D.apk/file" },
     { name: "سكيبكس", url: "https://www.mediafire.com/file/v9zqud9skc4uads/SkibX-2.697.926_%255BFON%255D.apk/file" },
-    { name: "ارسيوس", url: "#" },
+    { name: "ارسيوس", url: "https://www.mediafire.com/file/1af5xccmry3crsz/Arceus_X_Neo_v1.9.7_%255BFON%255D.apk/file" },
   ];
 
   return (
