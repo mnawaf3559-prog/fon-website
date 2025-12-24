@@ -6,7 +6,7 @@ export default function Home() {
     { name: "دلتا", url: "#" },
     { name: "دلتا فتنام", url: "#" },
     { name: "سكيبكس", url: "#" },
-    { name: "سكيبكس فتنام", url: "#" },
+    { name: "ارسيوس", url: "#" },
   ];
 
   return (
