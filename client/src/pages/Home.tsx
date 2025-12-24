@@ -1,25 +1,58 @@
 import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import { motion } from "framer-motion";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+  const links = [
+    { name: "دلتا", url: "#" },
+    { name: "دلتا فتنام", url: "#" },
+    { name: "سكيبكس", url: "#" },
+    { name: "سكيبكس فتنام", url: "#" },
+  ];
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#0a1929] text-white p-4 font-['Cairo']" dir="rtl">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="w-full max-w-md flex flex-col items-center space-y-8"
+      >
+        {/* Header Section */}
+        <div className="text-center space-y-2">
+          <h2 className="text-xl md:text-2xl font-medium text-gray-200">مرحبا بك في موقع</h2>
+          <h1 className="text-5xl md:text-6xl font-bold tracking-wider text-white drop-shadow-lg">fon</h1>
+          <p className="text-[#4ade80] text-lg md:text-xl mt-4 font-medium">هاكات ايفون</p>
+        </div>
+
+        {/* Buttons Section */}
+        <div className="w-full space-y-4">
+          {links.map((link, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: index * 0.1 + 0.3 }}
+            >
+              <Button 
+                className="w-full h-14 text-lg font-bold bg-[#22d3ee] hover:bg-[#06b6d4] text-white rounded-xl shadow-lg hover:shadow-[#22d3ee]/20 hover:scale-[1.02] transition-all duration-300 border-none"
+                onClick={() => window.open(link.url, '_blank')}
+              >
+                {link.name}
+              </Button>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Footer Section */}
+        <div className="mt-12 text-center text-gray-500 text-sm">
+          <p>© 2025 fon SYSTEM</p>
+        </div>
+      </motion.div>
+      
+      {/* Fixed Footer Badge */}
+      <div className="fixed bottom-4 right-4 opacity-50 hover:opacity-100 transition-opacity">
+        <span className="text-xs text-gray-600 border border-gray-700 rounded px-2 py-1">Made with Manus</span>
+      </div>
     </div>
   );
 }
