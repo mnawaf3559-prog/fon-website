@@ -20,7 +20,27 @@ export default function Home() {
         {/* Header Section */}
         <div className="text-center space-y-2">
           <h2 className="text-xl md:text-2xl font-medium text-gray-200">مرحبا بك في موقع</h2>
-          <h1 className="text-5xl md:text-6xl font-bold tracking-wider text-white drop-shadow-lg">fon</h1>
+          <motion.h1 
+            className="text-5xl md:text-6xl font-bold tracking-wider drop-shadow-lg"
+            animate={{ 
+              color: [
+                "#ef4444", // Red
+                "#eab308", // Yellow
+                "#3b82f6", // Blue
+                "#22c55e", // Green
+                "#000000", // Black
+                "#ffd700", // Gold
+                "#ef4444"  // Back to Red for smooth loop
+              ]
+            }}
+            transition={{ 
+              duration: 4, 
+              repeat: Infinity, 
+              ease: "linear" 
+            }}
+          >
+            fon
+          </motion.h1>
           <p className="text-[#4ade80] text-lg md:text-xl mt-4 font-medium">هاكات ايفون</p>
         </div>
 
