@@ -41,7 +41,7 @@ export default function Home() {
           >
             fon
           </motion.h1>
-          <p className="text-[#4ade80] text-lg md:text-xl mt-4 font-medium">هاكات ايفون</p>
+          <p className="text-[#4ade80] text-lg md:text-xl mt-4 font-medium">هاكات اندرويد</p>
         </div>
 
         {/* Buttons Section */}
