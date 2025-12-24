@@ -5,7 +5,7 @@ export default function Home() {
   const links = [
     { name: "دلتا", url: "https://www.mediafire.com/file/ch3r9wwnn8io32g/FON.Delta.FON-v2.703.apk/file" },
     { name: "دلتا فتنام", url: "https://www.mediafire.com/file/b8vms6du69x09kw/Delta_VNG_v2.702.%5BFON%5D.apk/file" },
-    { name: "سكيبكس", url: "#" },
+    { name: "سكيبكس", url: "https://www.mediafire.com/file/v9zqud9skc4uads/SkibX-2.697.926_%255BFON%255D.apk/file" },
     { name: "ارسيوس", url: "#" },
   ];
 
